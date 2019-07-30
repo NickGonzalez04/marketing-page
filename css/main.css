@@ -243,6 +243,47 @@ margin: 2%;
     color: #FFFFFF;
 }
 
+
+/* LISTS START */
+
+.eli{
+    width:410px;
+    margin:0 auto;
+    }
+    .eli { }
+    .eli ul {
+    list-style:none;
+    }
+    .eli ul li {
+    font-size:15px;
+    font-family: 'Raleway', sans-serif;
+    }
+    .eli ul li a {
+    display:block;
+    width:390px;
+    margin-left: -40px;
+    height:24px;
+    background-color:#03B3CB;
+    border-left:5px solid #222;
+    border-right:5px solid #222;
+    padding-left:10px;
+    padding-top:7px;
+    text-decoration:none;
+    color:white;
+    margin-bottom: 7px;
+    transition: all .2s ease-in-out;
+    }
+    .eli ul li a:hover {
+    -moz-transform:rotate(-5deg);
+    -moz-box-shadow:10px 10px 20px #000000;
+    -webkit-transform:rotate(-5deg);
+    -webkit-box-shadow:10px 10px 20px #000000;
+    transform:rotate(-5deg);
+    box-shadow:10px 10px 20px #000000;
+    }
+    
+/* LISTS END */
+
 @media only screen and (max-width: 500px){
     .container-nav{
         display: flex;
