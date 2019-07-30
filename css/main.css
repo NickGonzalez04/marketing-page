@@ -216,7 +216,7 @@ margin: 2%;
     height: 45px;
     font-size: 2rem;
     border-radius: 10px;
-    color: #EB5757;
+    color: black;
 }
 
 .bottom-button:hover{
@@ -270,15 +270,28 @@ margin: 2%;
     }
     #toggle:checked + .menu{
         display: block;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
     .header-img{
-        display: none;
+        /* display: none; */
+    }
+    .allContent{
+        flex-direction: column;
     }
     .text-one{
         margin: auto;
+
     }
     .text-one{
         margin: auto;
+
+    }
+    .img-one{
+
+    }
+    .img-two{
+
     }
     .bottom-button{
         margin: auto;
