@@ -15,12 +15,7 @@
         flex-direction: column;
     }
  
-    }
-        // .nav-logo{
-        //     // margin-left: 10%;
-        //     // display: flex;
-        //     // justify-content: space-between;
-        // }
+
 
         .nav {
             font-family: 'Montserrat', sans-serif;
@@ -28,7 +23,7 @@
                 text-align: right;
                 // text-decoration: none;
                 line-height: 70px;
-                width: 40%;
+                width: auto;
               
                 /* Gray 3 */
 
@@ -68,18 +63,20 @@
             color:  #EB5757;
         }
         .menu {
-            margin: 0 30px 0 0;
+            display: flex;
+            justify-content: space-around;
+            flex-flow: row nowrap;
+            align-items: center;
             @media (max-width: 500px) {
                 text-align: center;
                 
                 width: 100%;
                 display: none;
             }
-            .menu a{
+            a{
                 clear: right;
                 text-decoration: none;
-                margin: 0 10px;
-                line-height: 70px;
+                margin: 0 20px;
                 color: #FFFFFF;
                 @media (max-width: 500px) {
                 display: block;
@@ -92,5 +89,6 @@
                     color: #EB5757;
                 }
             }
+        }
         }
     }
