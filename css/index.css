@@ -1,3 +1,15 @@
+/* COLORS FROM DESIGN
+
+RED.    #EB5757
+Black.  #333333
+White.  #F2F2F2
+Greys Darkest to Lightest
+1. #4F4F4F
+2. #828282
+3. #BDBDBD
+4. #E0E0E0
+
+ */
 /* LISTS START */
 /* COLORS FROM DESIGN
 
@@ -140,7 +152,6 @@ table {
   border-spacing: 0;
 }
 /* GLOBAL */
-/* END GLOBAL */
 /* MAIN CONTENT */
 h1 {
   width: 198px;
@@ -178,6 +189,7 @@ h2 {
     font-size: 1.5rem;
     margin: auto;
     padding-top: 20px;
+    text-align: center;
   }
 }
 .build-team {
@@ -216,6 +228,7 @@ h2 {
     font-size: 1.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    text-align: center;
   }
 }
 .about-text p {
@@ -292,7 +305,7 @@ p {
   margin-right: 10%;
   margin-left: 10%;
   width: 80%;
-  height: 40%;
+  height: 85%;
   border-radius: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -302,6 +315,7 @@ p {
     height: 40%;
   }
 }
+/* END GLOBAL */
 /* needs to be nav-logo. not tested for errors yet */
 /* START NAV */
 .container-nav {
@@ -324,7 +338,6 @@ p {
   text-align: right;
   line-height: 70px;
   width: auto;
-  /* Gray 3 */
   background: #828282;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px 5px 5px 5px;
@@ -461,6 +474,7 @@ p {
   color: #FFFFFF;
 }
 /* END FOOTER */
+/*HOME PAGE CONTENT START*/
 .header-info {
   width: 80%;
   margin-left: 10%;
@@ -470,6 +484,11 @@ p {
 @media screen and (max-width: 500px) {
   .header-info {
     font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .header-info .header-info h2 {
+    text-align: center;
   }
 }
 .allContent {
@@ -515,60 +534,45 @@ p {
     margin-left: 0px;
   }
 }
-.container-mid-two {
+.allContent .container-mid-two {
   width: 80%;
   display: flex;
   flex-direction: row-reverse;
 }
-.container-mid-two .img-two img {
+.allContent .container-mid-two .img-two img {
   width: 500px;
   height: 400px;
   border-radius: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 @media (max-width: 500px) {
-  .container-mid-two .img-two img {
+  .allContent .container-mid-two .img-two img {
     width: 100%;
     height: 100%;
   }
 }
 @media (max-width: 500px) {
-  .container-mid-two {
+  .allContent .container-mid-two {
     margin: 0px;
     flex-direction: column;
   }
 }
-.text-two {
+.allContent .container-mid-two .text-two {
   font-size: 200%;
   width: 50%;
   height: 50%;
   margin-right: 200px;
 }
 @media (max-width: 500px) {
-  .text-two {
+  .allContent .container-mid-two .text-two {
     width: 100%;
     margin: none;
     font-size: 1rem;
     padding-bottom: 10px;
   }
 }
-@media (max-width: 500px) {
-  .allContent h2 {
-    text-align: center;
-  }
-}
-@media (max-width: 500px) {
-  .header-info h2 {
-    text-align: center;
-  }
-}
-@media (max-width: 500px) {
-  .about-text h2 {
-    text-align: center;
-  }
-}
-/* END MAIN CONTENT */
-/* LISTS START */
+/* END HOME PAGE CONTENT */
+/* ABOUT PAGE CONTENT START*/
 .build-team {
   display: flex;
   flex-wrap: wrap;
@@ -718,15 +722,16 @@ p {
 }
 .team-h2 {
   text-align: center;
+  width: 428px;
 }
-/* LISTS END */
-/* Contact Page - Style inputs  */
-.contact-container {
-  width: 95%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media screen and (max-width: 500px) {
+  .team-h2 {
+    text-align: center;
+    width: 300px;
+  }
 }
+/* ABOUT PAGE CONTENT END */
+/* CONTACT PAGE CONTENT START */
 .container-heading {
   justify-content: center;
   margin-right: 10%;
@@ -738,24 +743,50 @@ p {
     margin-top: 1%;
   }
 }
-label {
-  font-family: 'Montserrat', sans-serif;
-  margin-left: 10%;
+.contact-container {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Responsive layout - when the screen is less than 500px wide*/
 }
-.row {
+.contact-container .row {
   width: 420px;
 }
 @media screen and (max-width: 500px) {
-  .row {
+  .contact-container .row {
     align-items: center;
   }
 }
-form {
+.contact-container .row .column {
+  float: left;
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+@media screen and (max-width: 500px) {
+  .contact-container .row .column form {
+    width: 400px;
+  }
+  .contact-container .row .column form label {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10%;
+  }
+}
+.contact-container .row form {
   width: 500px;
 }
-input[type=text],
-select,
-textarea {
+.contact-container .row form label {
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 10%;
+}
+.contact-container .row #country {
+  background-color: #EB5757;
+}
+.contact-container input[type=text],
+.contact-container select,
+.contact-container textarea {
   margin-right: 10%;
   margin-left: 10%;
   width: 80%;
@@ -765,10 +796,7 @@ textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
-#country {
-  background-color: #EB5757;
-}
-input[type=submit] {
+.contact-container input[type=submit] {
   background-color: #EB5757;
   color: white;
   font-size: 16px;
@@ -780,41 +808,23 @@ input[type=submit] {
   cursor: pointer;
 }
 @media screen and (max-width: 500px) {
-  input[type=submit] {
+  .contact-container input[type=submit] {
     margin-left: 0px;
   }
 }
-input[type=submit]:hover {
+.contact-container input[type=submit]:hover {
   background-color: #BDBDBD;
   color: #EB5757;
 }
-/* Style the container/contact section */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 10px;
-}
-.column {
-  float: left;
-  width: 50%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 20px;
-}
-@media screen and (max-width: 500px) {
-  .column form {
-    width: 400px;
-  }
-}
-.row:after {
+.contact-container .row:after {
   content: "";
   display: table;
   clear: both;
 }
-/* Responsive layout - when the screen is less than 500px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 500px) {
-  .column,
-  input[type=submit] {
+  .contact-container .column,
+  .contact-container input[type=submit] {
     width: 400px;
   }
 }
+/* CONTACT PAGE END*/
