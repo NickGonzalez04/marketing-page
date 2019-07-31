@@ -402,6 +402,11 @@ p {
   background: #EB5757;
   border-radius: 5px 5px 0px 0px;
 }
+@media screen and (max-width: 500px) {
+  .footer {
+    font-size: 12px;
+  }
+}
 .footer .footer .pfooter {
   margin: 10px;
 }
@@ -620,7 +625,12 @@ label {
   margin-left: 10%;
 }
 .row {
-  width: 400px;
+  align-items: center;
+}
+@media screen and (max-width: 500px) {
+  .row {
+    width: 0px;
+  }
 }
 form {
   width: 500px;
