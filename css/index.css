@@ -176,7 +176,9 @@ h2 {
 }
 @media (max-width: 500px) {
   h2 {
+    font-size: 1.5rem;
     margin: auto;
+    padding-top: 20px;
   }
 }
 .build-team {
@@ -202,11 +204,29 @@ h2 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+@media (max-width: 500px) {
+  .about-text {
+    font-size: 0.5rem;
+  }
+}
 .about-text h2 {
   padding-bottom: 20px;
 }
+@media (max-width: 500px) {
+  .about-text h2 {
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
 .about-text p {
   font-size: 200%;
+}
+@media (max-width: 500px) {
+  .about-text p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 }
 h3 {
   width: 198px;
@@ -232,6 +252,7 @@ p {
 @media (max-width: 500px) {
   p {
     margin: auto;
+    padding-top: 10px;
   }
 }
 .header-img img {
@@ -245,6 +266,9 @@ p {
 @media (max-width: 500px) {
   .header-img img {
     margin: auto;
+    margin-top: 10px;
+    width: 80%;
+    height: 40%;
   }
 }
 .contact-img img {
@@ -258,6 +282,12 @@ p {
   .contact-img img {
     display: none;
   }
+  .contact-img img h2 {
+    font-size: 20%;
+  }
+  .contact-img img p {
+    font-size: 20%;
+  }
 }
 .about-img img {
   margin-right: 10%;
@@ -269,7 +299,8 @@ p {
 }
 @media (max-width: 500px) {
   .about-img img {
-    margin: auto;
+    width: 80%;
+    height: 40%;
   }
 }
 /* needs to be nav-logo. not tested for errors yet */
@@ -365,11 +396,20 @@ p {
 }
 /* BUTTON and h3 */
 .reach-out {
-  margin-left: 350px;
-  margin-bottom: 60px;
-  padding-left: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  width: 50%;
+  padding-top: 20px;
+}
+@media (max-width: 500px) {
+  .reach-out {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-bottom: 10px;
+  }
 }
 .reach-out .bottom-button {
   background-color: #828282;
@@ -385,6 +425,13 @@ p {
 .reach-out .bottom-button:hover {
   background-color: #BDBDBD;
   color: #EB5757;
+}
+@media (max-width: 500px) {
+  .reach-out .bottom-button {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
 }
 /* END BUTTON */
 /* FOOTER */
@@ -419,11 +466,11 @@ p {
   margin-left: 10%;
   margin-right: 10%;
   font-size: 200%;
-  padding-top: 20px;
 }
-.header-info p {
-  padding-top: 30px;
-  padding-bottom: 30px;
+@media screen and (max-width: 500px) {
+  .header-info {
+    font-size: 1rem;
+  }
 }
 .allContent {
   display: flex;
@@ -442,34 +489,83 @@ p {
   border-radius: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+@media (max-width: 500px) {
+  .allContent .container-mid-one .img-one img {
+    margin: auto;
+    width: 100%;
+    height: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .allContent .container-mid-one {
+    margin: 0px;
+    flex-direction: column;
+  }
+}
 .allContent .container-mid-one .text-one {
   font-size: 200%;
   width: 50%;
   height: 50%;
   margin-left: 200px;
 }
-.allContent .container-mid-one h2 {
-  padding-bottom: 20px;
+@media (max-width: 500px) {
+  .allContent .container-mid-one .text-one {
+    width: 100%;
+    font-size: 1rem;
+    margin-left: 0px;
+  }
 }
-.allContent .container-mid-two {
+.container-mid-two {
   width: 80%;
   display: flex;
   flex-direction: row-reverse;
 }
-.allContent .container-mid-two .img-two img {
+.container-mid-two .img-two img {
   width: 500px;
   height: 400px;
   border-radius: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.allContent .text-two {
+@media (max-width: 500px) {
+  .container-mid-two .img-two img {
+    width: 100%;
+    height: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .container-mid-two {
+    margin: 0px;
+    flex-direction: column;
+  }
+}
+.text-two {
   font-size: 200%;
   width: 50%;
   height: 50%;
   margin-right: 200px;
 }
-.allContent h2 {
-  padding-bottom: 20px;
+@media (max-width: 500px) {
+  .text-two {
+    width: 100%;
+    margin: none;
+    font-size: 1rem;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .allContent h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .header-info h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .about-text h2 {
+    text-align: center;
+  }
 }
 /* END MAIN CONTENT */
 /* LISTS START */
@@ -555,6 +651,22 @@ p {
   margin-bottom: 7px;
   transition: all 0.2s ease-in-out;
 }
+@media (max-width: 500px) {
+  .eli ul li a,
+  .anthony ul li a,
+  .nicolae ul li a,
+  .nicklaus ul li a,
+  .valerie ul li a,
+  .arvin ul li a,
+  .alejandro ul li a,
+  .nicholas ul li a,
+  .adam ul li a,
+  .andrew ul li a {
+    padding: 0;
+    padding-top: 7px;
+    width: 100%;
+  }
+}
 .eli ul li a:hover,
 .anthony ul li a:hover,
 .nicolae ul li a:hover,
@@ -599,7 +711,7 @@ p {
   .adam,
   .andrew {
     padding: 0;
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
   }
@@ -620,16 +732,22 @@ p {
   margin-right: 10%;
   margin-left: 10%;
 }
+@media screen and (max-width: 500px) {
+  .container-heading {
+    display: flex;
+    margin-top: 1%;
+  }
+}
 label {
   font-family: 'Montserrat', sans-serif;
   margin-left: 10%;
 }
 .row {
-  align-items: center;
+  width: 420px;
 }
 @media screen and (max-width: 500px) {
   .row {
-    width: 0px;
+    align-items: center;
   }
 }
 form {
