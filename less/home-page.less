@@ -1,0 +1,170 @@
+
+
+.header{
+.header-info{
+    width:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 200%;
+}
+}
+
+.allContent{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+.container-mid-one{
+    width: 80%;
+    display: flex;
+    .img-one img{
+        width: 400px;
+        height: 400px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .text-one{
+        font-size: 20px;
+         width: 100%;
+     }    
+  }
+    .container-mid-two{
+        width: 80%;
+        display: flex;
+        flex-direction: row-reverse;
+    .img-two img{
+        width: 400px;
+        height: 400px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        .text-two{
+            font-size: 20px;
+             width: 80%;
+         }
+    }
+}
+
+}
+/* END MAIN CONTENT */
+
+
+
+
+/* LISTS START */
+.build-team{
+    display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    .list-box();
+}
+
+.eli, .anthony, .nicolae, .nicklaus, .valerie, .arvin, .alejandro, .nicholas, .adam, .andrew{
+        // flex-wrap: wrap;
+        .list-mixin();
+        .list-item();
+        @media (max-width: 500px){
+            padding: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        ul{
+            border-bottom: 1px solid black;
+        }
+            }
+/* LISTS END */
+
+
+
+// table!
+
+
+/* Contact Page - Style inputs  */
+.contact-container{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+}
+
+.container-heading{
+justify-content: center;     
+margin-right: 10%;
+margin-left: 10%;   
+}
+
+label{
+    font-family:  'Montserrat', sans-serif;
+    margin-left: 10%;
+}
+.row{
+    width: 400px;
+}
+
+form{
+    width: 500px;
+}
+
+
+input[type=text], select, textarea {
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  #country{
+   background-color: #EB5757; 
+   }
+        
+  input[type=submit] {
+    background-color: #EB5757;
+    color: white;
+    font-size: 16px;   
+    width: 400px;
+    margin-left: 10%;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #BDBDBD;
+    color: #EB5757
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 500px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 500px) {
+    .column, input[type=submit] {
+      width: 400px;
+    //   margin-right: 10%;
+    //   margin-left: 10%;
+    }
+  }
+
