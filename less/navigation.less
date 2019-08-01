@@ -7,7 +7,7 @@
     width: 80%;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1.5px solid #EB5757;
+    border-bottom: 1.5px solid @Red-pink;
     padding-bottom: 1%;
             @media (max-width: 500px){
                 display: flex;
@@ -15,11 +15,10 @@
             }
         .nav {//.nav opening 
                 font-family: 'Montserrat', sans-serif;
-                background: #828282;
+                background: @Midgray;
                 text-align: right;
                 line-height: 70px;
                 width: auto;
-                background: #828282;
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 border-radius: 5px 5px 5px 5px;
                         @media (max-width: 500px) {
@@ -49,8 +48,8 @@
                         }// MEDIA QUERY CLOSE 
                     }// TOGGLE CLSOE ----
                         &:hover{
-                            background-color: #BDBDBD;
-                            color:  #EB5757;
+                            background-color: @Hovergray;
+                            color:  @Red-pink;
                         }
                     .menu {// MENU OPENING ----
                         display: flex;
@@ -66,16 +65,16 @@
                         clear: right;
                         text-decoration: none;
                         margin: 0 20px;
-                        color: #FFFFFF;
+                        color: @NavaTag;
                                 @media (max-width: 500px) {
                                 display: block;
                                 margin: 0;
-                                color: #EB5757;
-                                text-shadow: 2px 2px 4px #EB5757;
+                                color: @Red-pink;
+                                text-shadow: 2px 2px 4px @Red-pink;
                                 font-size: 200%;
                                 }
                         span{
-                            color: #EB5757;
+                            color: @Red-pink;
                         }
              }// A TAG CLOSING 
         }//MENU CLOSING

@@ -5,6 +5,8 @@
     margin-left: 10%;
     margin-right: 10%;
     font-size: 200%;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
     @media screen and (max-width: 500px){
         font-size: 1rem;
     }
@@ -34,7 +36,7 @@
                 @media(max-width: 500px){
                     margin: auto;
                     width: 100%;
-                    height: 100%;
+                    height: 40%;
                 }    
                 }
                 @media(max-width: 500px){// Container media query
@@ -66,7 +68,7 @@
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 @media(max-width: 500px){
                     width: 100%;
-                    height: 100%;
+                    height: 40%;
                     }
                 }
                 @media(max-width: 500px){// Container media query
@@ -95,7 +97,6 @@
 /* ABOUT PAGE CONTENT START*/
     .build-team{
         display: flex;
-        // flex-direction: column;
         flex-wrap: wrap;
         .list-box();
         h2{
@@ -113,7 +114,6 @@
             @media (max-width: 500px){
                 padding: 0;
                 width: 80%;
-                // max-width: 100%;
                 display: flex;
                 flex-direction: column;
             }
@@ -176,7 +176,7 @@
                         }
                      }
                      #country{
-                        background-color: #EB5757; 
+                        background-color: @Red-pink; 
                         }
                 } // Closing Row      
 
@@ -193,7 +193,7 @@
                 resize: vertical;
             }
             input[type=submit] {
-                background-color: #EB5757;
+                background-color: @Red-pink;
                 color: white;
                 font-size: 16px;   
                 width: 400px;
@@ -207,8 +207,8 @@
                 }
             }
             input[type=submit]:hover {
-                background-color: #BDBDBD;
-                color: #EB5757
+                background-color: @Hovergray;
+                color: @Red-pink;
             }
         .row:after {
             content: "";
